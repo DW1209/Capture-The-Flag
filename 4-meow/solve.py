@@ -8,7 +8,7 @@ if __name__ == '__main__':
 	answer, target = 0, None
 
 	if len(sys.argv) < 2:
-		print(f'usage: {__file__} <ip> <port>')
+		print(f'usage: {__file__} <filename>')
 		exit(1)
 	elif len(sys.argv) != 3:
 		target = pwn.process(sys.argv[1])				# use local file
